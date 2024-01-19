@@ -139,8 +139,8 @@ Discussion and conclusion
 
 ## Team Contributions
 ***
-example: x and y contributed to feature engineering. For training algorithms, z developed NN Model... 
-> *Buse Güney Keleş, Gizem Doğa Filiz, Nikan Nobari, Nur Banu Altın, Selim Gül.*
+We highly relied on collaboration. Every group member was very interested and helpful to this project. Banu and Buse contributed to data preparation. Buse, Gizem, and Nikan contributed to feature engineering. Gizem contributed to Decision Tree. Banu and Buse contributed to the Neural Network Model. Selim contributed to the Random Forest Algorithm. Gizem contributed to the XGBoost. Banu, Buse, and Nikan contributed to data exploration. Selim contributed to the discussion and conclusion.
+> *Buse Keleş, Gizem Doğa Filiz, Nikan Nobari, Nur Banu Altın, Selim Gül.*
 
 ### Screenshot
 <p align="center">
