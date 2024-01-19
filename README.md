@@ -16,11 +16,7 @@ The work presented is for the CS412 Machine Learning course at Sabanci Universit
 ## Methodology
 ***
 A list of methodologies used within the project:
-* Download Data (Links to Code Snippets?)
-  
-```ruby
-print(snippet here)
-```
+
 * Data Preparation
 
 The data extracted from HTML files that store the ChatGPT conversations of students. The HTML files are read, parsed with BeautifulSoup and conversations are extracted based on specific patterns. THe code is extracted from file path, acting as a key in the “code2convos” dictionary where results are stored. If there are errors, detailed information is recorded in the log file, aiding in debugging and analysis. Duplicated keys are removed to prevent overwriting. 
@@ -30,6 +26,10 @@ Texts in the dictionary are preprocessed by several steps, including lowercasing
 Prompts written by students are matched with questions given in the assignment by the simple term frequency vectorizing method. The distances between vectors representing prompts and questions are calculated. Mapping between file codes and their cosine similarity scores for each question is done.
 
 Since we ran multiple training models for the next parts, tokenization and vectorization of data were needed for the ones which require a numerical format as it is a common preprocessing step for natural language processing tasks. 
+  
+```ruby
+print(snippet here)
+```
 
 * Feature Engineering (Links to Code Snippets?)
   
