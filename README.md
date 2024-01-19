@@ -78,7 +78,7 @@ The model is trained for 22 epochs. In some of the runs, we used early stopping 
 The model's training progress is stored in the history variable. History variable enables to call of the same model later in the code to train different datasets.
 
   ### Random Forest Algorithm:
-  The project employs the Random Forest algorithm for regression tasks, utilizing `RandomForestRegressor` from `sklearn.ensemble` with 1,000 trees and a maximum depth of 10 for each tree. This setup is designed to enhance model performance without overfitting. Model evaluation involves Mean Squared Error (MSE) and R-Squared (R2) metrics, assessing prediction accuracy and the variance explained by the model, respectively. These metrics provide a clear indication of the model's predictive ability on both training and test data, ensuring a balanced and thorough evaluation of the Random Forest algorithm in the project. The results of the evaluation metrics for Random Forest algorithm are the following:
+The project employs the Random Forest algorithm for regression tasks, utilizing `RandomForestRegressor` from `sklearn.ensemble` with 1,000 trees and a maximum depth of 10 for each tree. This setup is designed to enhance model performance without overfitting. Model evaluation involves Mean Squared Error (MSE) and R-Squared (R2) metrics, assessing prediction accuracy and the variance explained by the model, respectively. These metrics provide a clear indication of the model's predictive ability on both training and test data, ensuring a balanced and thorough evaluation of the Random Forest algorithm in the project. The results of the evaluation metrics for Random Forest algorithm are the following:
   * MSE (Mean Squared Error):
 
     **MSE for the Training Set:** The MSE of 33.27 on the training set indicates a moderate disparity between the actual and predicted values. This suggests the model generally fits the training data but may not capture all underlying patterns.\
@@ -99,38 +99,38 @@ Parallel Processing: Efficient implementation for faster training.
 Handling Missing Values: Built-in mechanisms to address missing data.
 
   * Cross-Validation for Hyperparameter Tuning:
-    * Purpose: Cross-validation is a technique to evaluate model performance and select optimal hyperparameters. It involves dividing data into multiple folds, training the model on different combinations of folds, and assessing performance on held-out folds.
+    **Purpose: Cross-validation is a technique to evaluate model performance and select optimal hyperparameters. It involves dividing data into multiple folds, training the model on different combinations of folds, and assessing performance on held-out folds.
       
-    * Key Hyperparameters Tuned:
-	  	* max_depth: Controls the depth of individual decision trees. Lower values prevent overfitting, while higher values allow for more complex models.
-		* learning_rate: Determines the step size for each tree's contribution to the overall model. Smaller values can lead to slower convergence but potentially better generalization.
-	  	* n_estimators: Specifies the number of trees in the ensemble. More trees can improve accuracy but increase training time.
+    **Key Hyperparameters Tuned:
+  * max_depth: Controls the depth of individual decision trees. Lower values prevent overfitting, while higher values allow for more complex models.
+  * learning_rate: Determines the step size for each tree's contribution to the overall model. Smaller values can lead to slower convergence but potentially better generalization.
+  * n_estimators: Specifies the number of trees in the ensemble. More trees can improve accuracy but increase training time.
     	  
-    * Process:
-	Define a range of values for each hyperparameter.
-	Implement cross-validation (e.g., K-fold) to train and evaluate models with different combinations.
-	Select hyperparameters that yield the best validation performance.
+ * Process:
+   Define a range of values for each hyperparameter.
+   Implement cross-validation (e.g., K-fold) to train and evaluate models with different combinations.
+   Select hyperparameters that yield the best validation performance.
 
-    * Selected Hyperparameters:
-	Hyperparameters were tuned using cross-validation to optimize model performance.
-		* max_depth=4: Individual trees can have a maximum depth of 4.
-    **NİKAAANN BURAYA MAX_DEPTH XGBOOST GRAPH !!!!**
-      		* learning_rate=0.05: Each tree's contribution is weighted with a step size of 0.05.
-    **NİKAAANN BURAYA LEARNING_RATE XGBOOST GRAPH !!!!**
-	  	* n_estimators=50: Model includes 50 trees in the ensemble.
-    **NİKAAANN BURAYA N_ESTIMATORS XGBOOST GRAPH !!!!**
+ * Selected Hyperparameters:
+   Hyperparameters were tuned using cross-validation to optimize model performance.
+   ** max_depth=4: Individual trees can have a maximum depth of 4.
+   **NİKAAANN BURAYA MAX_DEPTH XGBOOST GRAPH !!!!**
+   *** learning_rate=0.05: Each tree's contribution is weighted with a step size of 0.05.
+   **NİKAAANN BURAYA LEARNING_RATE XGBOOST GRAPH !!!!**
+   *** n_estimators=50: Model includes 50 trees in the ensemble.
+   **NİKAAANN BURAYA N_ESTIMATORS XGBOOST GRAPH !!!!**
  
-  * Evaluation Results of XGBoost Algorithm:
-      * Mean Squared Error (MSE):
-	* Train: 45.0738
-    	* Test: 99.4161
-      * R-squared:
-	* Train: 0.7242
-    	* Test: 0.1145
+ * Evaluation Results of XGBoost Algorithm:
+   Mean Squared Error (MSE):
+   **Train: 45.0738
+   ** Test: 99.4161
+   R-squared:
+   ** Train: 0.7242
+   ** Test: 0.1145
     
   * Interpretation:
-    * MSE: Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
-    * R-squared: Values closer to 1 indicate better model fit. The test R-squared is relatively low, suggesting room for improvement in generalization.
+    ** MSE: Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
+    ** R-squared: Values closer to 1 indicate better model fit. The test R-squared is relatively low, suggesting room for improvement in generalization.
 
 
 ## Results
