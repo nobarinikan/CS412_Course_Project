@@ -2,7 +2,7 @@
 ***
 ## Project Description
 
-Briefly(One Line) describe what your project does and its key features.
+The project aims to predict homework scores using various machine learning models. The approach involves extracting and preprocessing data from conversations, employing feature engineering techniques to enrich the dataset, and then applying multiple regression models to predict the scores. This multidimensional analysis ensures a thorough understanding and effective prediction of homework scores based on the given data.
 
 The work presented is for CS412 project. 
 
