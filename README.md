@@ -25,9 +25,7 @@ A list of metthodologies used within the project:
 * Download Data (Links to Code Snippets?)
   
 ```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+print(snippet here)
 ```
 
 * Create/Extract Features (Links to Code Snippets?)
