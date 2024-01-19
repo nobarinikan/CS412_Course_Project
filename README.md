@@ -2,7 +2,9 @@
 ***
 ## Project Description
 
-The work presented is for CS412 project. 
+The project aims to predict homework scores using various machine learning models. The approach involves extracting and preprocessing data from conversations, employing feature engineering techniques to enrich the dataset, and then applying multiple regression models to predict the scores. This multidimensional analysis ensures a thorough understanding and effective prediction of homework scores based on the given data.
+
+The work presented is for the CS412 Machine Learning course at Sabanci University.
 
 ## Table of Contents
 1. [General Info](#general-info)
@@ -11,7 +13,7 @@ The work presented is for CS412 project.
 4. [Team Contributions](#teamcontributions)
 ### General Info
 ***
-The project aims to predict homework scores using various machine learning models. The approach involves extracting and preprocessing data from conversations, employing feature engineering techniques to enrich the dataset, and then applying multiple regression models to predict the scores. This multidimensional analysis ensures a thorough understanding and effective prediction of homework scores based on the given data.
+
 ### Screenshot
 ![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
 ## Methodology
