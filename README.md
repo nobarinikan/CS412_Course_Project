@@ -111,7 +111,7 @@ Handling Missing Values: Built-in mechanisms to address missing data.
 	Implement cross-validation (e.g., K-fold) to train and evaluate models with different combinations.
 	Select hyperparameters that yield the best validation performance.
 
-	* Selected Hyperparameters:
+    * Selected Hyperparameters:
 	Hyperparameters were tuned using cross-validation to optimize model performance.
 		* max_depth=4: Individual trees can have a maximum depth of 4.
     **NİKAAANN BURAYA MAX_DEPTH XGBOOST GRAPH !!!!**
@@ -121,13 +121,13 @@ Handling Missing Values: Built-in mechanisms to address missing data.
     **NİKAAANN BURAYA N_ESTIMATORS XGBOOST GRAPH !!!!**
   
     * Evaluation Results of XGBoost Algorithm:
-    	* Mean Squared Error (MSE):
-     		 * Train: 45.0738
-     		 * Test: 99.4161
+	* Mean Squared Error (MSE):
+  		* Train: 45.0738
+    		* Test: 99.4161   
 	* R-squared:
-     		 * Train: 0.7242
-     		 * Test: 0.1145
-        
+     		* Train: 0.7242
+    		* Test: 0.1145
+
   * Interpretation:
     * MSE: Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
     * R-squared: Values closer to 1 indicate better model fit. The test R-squared is relatively low, suggesting room for improvement in generalization.
