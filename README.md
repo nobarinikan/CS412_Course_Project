@@ -7,12 +7,10 @@ The project aims to predict homework scores using various machine learning model
 The work presented is for the CS412 Machine Learning course at Sabanci University.
 
 ## Table of Contents
-1. [General Info](#general-info)
-2. [Methodology](#methodology)
-3. [Results](#results)
-4. [Team Contributions](#teamcontributions)
-### General Info
-***
+1. [Methodology](#methodology)
+2. [Results](#results)
+3. [Team Contributions](#teamcontributions)
+
 ## Methodology
 ***
 A list of methodologies used within the project:
