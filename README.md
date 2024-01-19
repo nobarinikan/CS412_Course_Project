@@ -58,7 +58,7 @@ Many features were created and some with high correlations were selected for tra
 21. Question number where the student starts consulting GPT
 22. Primitive Grade (calculated based on similarity score and max point of each question)
 
-The general scores data were skewed, indicating that the histogram was asymmetrically distributed. Many students received very high grades on a scale of 80-100 out of 100. The lowest scores, 15 and 31, were identified as outliers. The scores merged with the features data frame for further analysis in the next steps. The features are normalized using MinMaxScaler to scale each numerical value between 0 and 1.
+The general scores data were skewed, indicating that the histogram was asymmetrically distributed. Many students received very high grades on a scale of 80-100 out of 100. The lowest scores, 15 and 31, were identified as outliers. The features are normalized using MinMaxScaler to scale each numerical value between 0 and 1. The scores merged with the features data frame for further analysis in the next steps. Rows with NaN values and duplicates are disregarded.
 
 * Select Features (Links to Code Snippets?)
   
