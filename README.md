@@ -104,7 +104,7 @@ Handling Missing Values: Built-in mechanisms to address missing data.
       
     * Key Hyperparameters Tuned:
 	  	* max_depth: Controls the depth of individual decision trees. Lower values prevent overfitting, while higher values allow for more complex models.
-		  * learning_rate: Determines the step size for each tree's contribution to the overall model. Smaller values can lead to slower convergence but potentially better generalization.
+		* learning_rate: Determines the step size for each tree's contribution to the overall model. Smaller values can lead to slower convergence but potentially better generalization.
 	  	* n_estimators: Specifies the number of trees in the ensemble. More trees can improve accuracy but increase training time.
     	  
     * Process:
@@ -115,10 +115,9 @@ Handling Missing Values: Built-in mechanisms to address missing data.
 	  * Selected Hyperparameters:
 		  Hyperparameters were tuned using cross-validation to optimize model performance.
 	  	* n_estimators=50: Model includes 50 trees in the ensemble.
-		  * learning_rate=0.05: Each tree's contribution is weighted with a step size of 0.05.
+		* learning_rate=0.05: Each tree's contribution is weighted with a step size of 0.05.
 	  	* max_depth=4: Individual trees can have a maximum depth of 4.
-		
-
+	
   * Evaluation Results of XGBoost Algorithm:
     * Mean Squared Error (MSE):
       * Train: 45.0738
@@ -126,15 +125,12 @@ Handling Missing Values: Built-in mechanisms to address missing data.
     * R-squared:
       * Train: 0.7242
       * Test: 0.1145
-
-	* Interpretation:
-
-		* MSE: Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
-		* R-squared: Values closer to 1 indicate better model fit. The test R-squared is relatively low, suggesting room for improvement in generalization.
-
+        
+  * Interpretation:
+    * MSE: Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
+    * R-squared: Values closer to 1 indicate better model fit. The test R-squared is relatively low, suggesting room for improvement in generalization.
 
 
-   
 ## Results
 ***
 Discussion and conclusion
