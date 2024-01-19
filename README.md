@@ -27,6 +27,11 @@ A list of methodologies used within the project:
 ```ruby
 print(snippet here)
 ```
+* Data Preparation
+
+The data extracted from HTML files that store the ChatGPT conversations of students. The HTML files are read, parsed with BeautifulSoup and conversations are extracted based on specific patterns. THe code is extracted from file path, acting as a key in the “code2convos” dictionary where results are stored. If there are errors, detailed information is recorded in the log file, aiding in debugging and analysis. Duplicated keys are removed to prevent overwriting. 
+
+Texts in the dictionary are preprocessed by several steps, including lowercasing, removal of punctuation and special characters, stopword removal, stemming, and lemmatization. Tokenized words are then rejoined into a single string. The dictionary is updated with the preprocessed version.
 
 * Create/Extract Features (Links to Code Snippets?)
 * Select Features (Links to Code Snippets?)
