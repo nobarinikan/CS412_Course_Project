@@ -1,6 +1,11 @@
-![Structure of the README file](image.png)
-
 # Project Title
+
+Table of Contents
+- [ProjectDescription](#project-description)
+- [Overiew of The Repository](#overiew-of-the-repository)
+- [Methodology](#methodology)
+- [Results](#results)
+- [Team Member Contributions](#team-member-contributions)
 
 
 ## Project Description
@@ -26,4 +31,4 @@ Below you can find the discussion regarding the metholdogy used in our approach.
 ## Results
 
 
-## Team Contributions 
+## Team Member Contributions 
