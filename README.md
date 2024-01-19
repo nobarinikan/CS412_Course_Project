@@ -21,7 +21,7 @@ The work presented is for the CS412 Machine Learning course at Sabanci Universit
 
 ## Methodology
 ***
-A list of metthodologies used within the project:
+A list of methodologies used within the project:
 * Download Data (Links to Code Snippets?)
   
 ```ruby
@@ -30,16 +30,11 @@ print(snippet here)
 
 * Create/Extract Features (Links to Code Snippets?)
 * Select Features (Links to Code Snippets?)
-* Different Modelts traines (NN, randomForest etc.) (Links to Code Snippets?)
+* Different Models trainings (NN, randomForest etc.) (Links to Code Snippets?)
 ## Results
 ***
-Discussion adn conclusion
-```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
+Discussion and conclusion
+
 ## Team Contributions
 ***
 Give instructions on how to collaborate with your project.
