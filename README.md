@@ -88,6 +88,53 @@ The model's training progress is stored in the history variable. History variabl
 
     **R2 for the Training Set:** An R2 of 0.796 indicates that approximately 79.6% of the variance in the target variable is predictable from the features in the model. This reflects a strong fit to the training data but leaves room for potential improvement.\
     **R2 for the Test Set:** An R2 of 0.015 on the test set is close to zero, suggesting that the model does not effectively predict the target variable on unseen data. The model's capability to generalize is in question, with predictions barely better than a simple mean.
+
+ ### XGBoost Algorithm:
+   * Overview:
+Gradient Boosting Framework: XGBoost builds an ensemble of decision trees sequentially. Each tree attempts to correct the errors of its predecessors.
+
+  * Key Features:
+Regularization: Techniques like pruning and shrinkage to reduce overfitting.
+Parallel Processing: Efficient implementation for faster training.
+Handling Missing Values: Built-in mechanisms to address missing data.
+
+  * Cross-Validation for Hyperparameter Tuning:
+    
+	  * Purpose: Cross-validation is a technique to evaluate model performance and select optimal hyperparameters. It involves dividing data into multiple folds, training the model on different combinations of folds, and assessing performance on held-out folds.
+      
+    * Key Hyperparameters Tuned:
+	  	* max_depth: Controls the depth of individual decision trees. Lower values prevent overfitting, while higher values allow for more complex models.
+		  * learning_rate: Determines the step size for each tree's contribution to the overall model. Smaller values can lead to slower convergence but potentially better generalization.
+	  	* n_estimators: Specifies the number of trees in the ensemble. More trees can improve accuracy but increase training time.
+    	  
+    * Process:
+      Define a range of values for each hyperparameter.
+      Implement cross-validation (e.g., K-fold) to train and evaluate models with different combinations.
+      Select hyperparameters that yield the best validation performance.
+
+	  * Selected Hyperparameters:
+		  Hyperparameters were tuned using cross-validation to optimize model performance.
+	  	* n_estimators=50: Model includes 50 trees in the ensemble.
+		  * learning_rate=0.05: Each tree's contribution is weighted with a step size of 0.05.
+	  	* max_depth=4: Individual trees can have a maximum depth of 4.
+		
+
+  * Evaluation Results of XGBoost Algorithm:
+    * Mean Squared Error (MSE):
+      * Train: 45.0738
+      * Test: 99.4161
+    * R-squared:
+      * Train: 0.7242
+      * Test: 0.1145
+
+	* Interpretation:
+
+		* MSE: Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
+		* R-squared: Values closer to 1 indicate better model fit. The test R-squared is relatively low, suggesting room for improvement in generalization.
+
+
+
+   
 ## Results
 ***
 Discussion and conclusion
