@@ -101,10 +101,10 @@ Handling Missing Values: Built-in mechanisms to address missing data.
   * Cross-Validation for Hyperparameter Tuning:
     **Purpose: Cross-validation is a technique to evaluate model performance and select optimal hyperparameters. It involves dividing data into multiple folds, training the model on different combinations of folds, and assessing performance on held-out folds.
       
-    **Key Hyperparameters Tuned:
-  * max_depth: Controls the depth of individual decision trees. Lower values prevent overfitting, while higher values allow for more complex models.
-  * learning_rate: Determines the step size for each tree's contribution to the overall model. Smaller values can lead to slower convergence but potentially better generalization.
-  * n_estimators: Specifies the number of trees in the ensemble. More trees can improve accuracy but increase training time.
+    Key Hyperparameters Tuned:
+    max_depth: Controls the depth of individual decision trees. Lower values prevent overfitting, while higher values allow for more complex models.
+    learning_rate: Determines the step size for each tree's contribution to the overall model. Smaller values can lead to slower convergence but potentially better generalization.
+    n_estimators: Specifies the number of trees in the ensemble. More trees can improve accuracy but increase training time.
     	  
  * Process:
    Define a range of values for each hyperparameter.
