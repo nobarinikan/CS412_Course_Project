@@ -56,8 +56,32 @@ BURAYA GRADE DISTRIBUTION GRAPH!!
 The general scores data were skewed, indicating that the histogram was asymmetrically distributed. Many students received very high grades on a scale of 80-100 out of 100. The lowest scores, 15 and 31, were identified as outliers. The features are normalized using MinMaxScaler to scale each numerical value between 0 and 1. The scores merged with the features data frame for further analysis in the next steps. Rows with NaN values and duplicates are disregarded.
   
 * Different Models trainings (NN, randomForest etc.)
+ ### Decision Tree Regressor:
+   * Overview:
+Tree-Based Learning: Builds a tree-like structure to model relationships between features and target variable.
+Recursive Partitioning: Recursively splits data into subsets based on feature values, aiming to reduce impurity (variance for regression).
+Interpretability: Clear decision rules make it easy to understand model reasoning.
 
-  ### Neural Network Model:
+  * Cross-Validation for Hyperparameter Tuning:
+    - **Purpose:** Cross-validation is a technique to evaluate model performance and select optimal hyperparameters. It involves dividing data into multiple folds, training the model on different combinations of folds, and assessing performance on held-out folds.
+      
+    - **Key Hyperparameters Tuned:**
+      - **max_depth:** Controls the depth of the decision tree.
+      - **min_samples_split:** Minimum samples required to split a node.
+        
+    - **Process:**
+   Define a range of values for each hyperparameter.
+   Implement cross-validation (e.g., K-fold) to train and evaluate models with different combinations.
+   Select hyperparameters that yield the best validation performance.
+
+ * Selected Hyperparameters:
+   Hyperparameters were tuned using cross-validation to optimize model performance.
+   **max_depth = 8:** Maximum depth of 8 for the tree.
+   **NİKAAANN BURAYA MAX_DEPTH Decision tree GRAPH !!!!**
+   **min_samples_split = 20:** Minimum of 20 samples required to split a node.
+   **NİKAAANN BURAYA decision tree min sample split GRAPH !!!!**
+
+ ### Neural Network Model:
 
 * Train data shape: (97, 5)
 * Test data shape: (25, 5)
@@ -127,6 +151,35 @@ Handling Missing Values: Built-in mechanisms to address missing data.
    **NİKAAANN BURAYA N_ESTIMATORS XGBOOST GRAPH !!!!**
  
 ## Results
+  * Evaluation Results of Decision Tree Regressor:
+   - Mean Squared Error (MSE):
+     - **Train:** 107.2142
+     - **Test:** 97.6568
+     - **MSE for each node:**
+Node 0 has MSE 163.42034222552866
+Node 1 has MSE 126.39409722222263
+Node 2 has MSE 667.3333333333339
+Node 3 has MSE 63.20517901968742
+Node 4 has MSE 149.0914127423821
+Node 5 has MSE 28.042387543253426
+Node 6 has MSE 24.88083333333452
+Node 7 has MSE 18.626666666667006
+Node 8 has MSE 24.515555555553874
+Node 9 has MSE 4.195555555555984
+Node 10 has MSE 28.48999999999978
+Node 11 has MSE 16.535714285713766
+Node 12 has MSE 34.75
+Node 13 has MSE 42.859375
+Node 14 has MSE 0.0
+ 
+   - R-squared:
+     - **Train:** 0.3439
+     - **Test:** 0.1301
+    
+  * Interpretation:
+    ** MSE: Overall, the model exhibits moderate MSE values, suggesting room for improvement in fit. The test MSE is slightly lower than the train MSE, which could be due to noise in the training set or potential underfitting.
+    ** R-squared: The R-squared values, especially on the test set, are relatively low, indicating that the model explains only a small portion of the variance in the target variable.
+
   * Evaluation Results of Random Forest Algorithm:
   ***Model evaluation involves Mean Squared Error (MSE) and R-Squared (R2) metrics, assessing prediction accuracy and the variance explained by the model, respectively. These metrics provide a clear indication of the model's predictive ability on both training and test data, ensuring a balanced and thorough evaluation of the Random Forest algorithm in the project. The results of the evaluation metrics for Random Forest algorithm are the following:
     * MSE (Mean Squared Error):
