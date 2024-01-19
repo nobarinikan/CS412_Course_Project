@@ -76,7 +76,24 @@ The model is trained for 22 epochs. In some of the runs, we used early stopping 
 The model's training progress is stored in the history variable. History variable enables to call of the same model later in the code to train different datasets.
 
   ### Random Forest Algorithm:
-The project employs the Random Forest algorithm for regression tasks, utilizing `RandomForestRegressor` from `sklearn.ensemble` with 1,000 trees and a maximum depth of 10 for each tree. This setup is designed to enhance model performance without overfitting. 
+  * Overview: Ensemble Learning Technique: The Random Forest algorithm operates by constructing a multitude of decision trees during training time and yielding the average prediction of individual trees for regression tasks. It combines the simplicity of decision trees with flexibility, resulting in a robust model.
+
+  * Key Features:
+
+**Bagging:** Random Forest employs the bagging technique, where each tree is trained on a random subset of the data, reducing variance and preventing overfitting.\
+**Feature Randomness:** When building trees, only a random subset of features is considered for splitting at each node, contributing to diversity among the trees and robustness of the model.\
+**Reduction of Overfitting:** The combination of bagging and feature randomness ensures that the model does not overfit the training data, providing a more generalized performance on unseen data.\
+
+  * Hyperparameter Tuning:
+
+**n_estimators (1000 trees):** Determines the number of trees in the forest. A higher number increases model robustness but also computational complexity.\
+**max_depth (10):** Sets the maximum depth of each tree. This parameter is crucial for controlling the complexity of the model, with deeper trees potentially capturing more information about the data.\
+**random_state (42):** Ensures reproducibility of results by using a consistent seed for the random number generator.\
+
+  * Implementation and Training:
+
+The `RandomForestRegressor` from `sklearn.ensemble` is used, with the key hyperparameters set to create an effective model.\
+The model is trained on the training dataset, allowing each tree to learn and make predictions, which are then averaged for the final output.
 
  ### XGBoost Algorithm:
    * Overview:
