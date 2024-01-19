@@ -121,12 +121,12 @@ Handling Missing Values: Built-in mechanisms to address missing data.
    **NİKAAANN BURAYA N_ESTIMATORS XGBOOST GRAPH !!!!**
  
  * Evaluation Results of XGBoost Algorithm:
-   Mean Squared Error (MSE):
-   - **Train:** 45.0738
-   - **Test:** 99.4161
-   R-squared:
-   - **Train:** 0.7242
-   - **Test:** 0.1145
+   - Mean Squared Error (MSE):
+     - **Train:** 45.0738
+     - **Test:** 99.4161
+   - R-squared:
+     - **Train:** 0.7242
+     - **Test:** 0.1145
     
   * Interpretation:
     ** MSE: Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
