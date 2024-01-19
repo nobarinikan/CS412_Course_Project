@@ -99,8 +99,7 @@ Parallel Processing: Efficient implementation for faster training.
 Handling Missing Values: Built-in mechanisms to address missing data.
 
   * Cross-Validation for Hyperparameter Tuning:
-    
-	  * Purpose: Cross-validation is a technique to evaluate model performance and select optimal hyperparameters. It involves dividing data into multiple folds, training the model on different combinations of folds, and assessing performance on held-out folds.
+    * Purpose: Cross-validation is a technique to evaluate model performance and select optimal hyperparameters. It involves dividing data into multiple folds, training the model on different combinations of folds, and assessing performance on held-out folds.
       
     * Key Hyperparameters Tuned:
 	  	* max_depth: Controls the depth of individual decision trees. Lower values prevent overfitting, while higher values allow for more complex models.
@@ -108,26 +107,25 @@ Handling Missing Values: Built-in mechanisms to address missing data.
 	  	* n_estimators: Specifies the number of trees in the ensemble. More trees can improve accuracy but increase training time.
     	  
     * Process:
-      Define a range of values for each hyperparameter.
-      Implement cross-validation (e.g., K-fold) to train and evaluate models with different combinations.
-      Select hyperparameters that yield the best validation performance.
-
+      - Define a range of values for each hyperparameter.
+      - Implement cross-validation (e.g., K-fold) to train and evaluate models with different combinations.
+      - Select hyperparameters that yield the best validation performance.
 	  * Selected Hyperparameters:
-		Hyperparameters were tuned using cross-validation to optimize model performance.
+	Hyperparameters were tuned using cross-validation to optimize model performance.
 		* max_depth=4: Individual trees can have a maximum depth of 4.
     **NİKAAANN BURAYA MAX_DEPTH XGBOOST GRAPH !!!!**
       		* learning_rate=0.05: Each tree's contribution is weighted with a step size of 0.05.
     **NİKAAANN BURAYA LEARNING_RATE XGBOOST GRAPH !!!!**
 	  	* n_estimators=50: Model includes 50 trees in the ensemble.
     **NİKAAANN BURAYA N_ESTIMATORS XGBOOST GRAPH !!!!**
-	  	
-  * Evaluation Results of XGBoost Algorithm:
-    * Mean Squared Error (MSE):
-      * Train: 45.0738
-      * Test: 99.4161
-    * R-squared:
-      * Train: 0.7242
-      * Test: 0.1145
+  
+    * Evaluation Results of XGBoost Algorithm:
+    	* Mean Squared Error (MSE):
+     		 * Train: 45.0738
+     		 * Test: 99.4161
+  	* R-squared:
+     		 * Train: 0.7242
+     		 * Test: 0.1145
         
   * Interpretation:
     * MSE: Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
