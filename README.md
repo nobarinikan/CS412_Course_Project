@@ -79,6 +79,7 @@ Interpretability: Clear decision rules make it easy to understand model reasonin
 
  * Selected Hyperparameters:
    Hyperparameters were tuned using cross-validation to optimize model performance.
+   
    **max_depth = 8:** Maximum depth of 8 for the tree.
    
 <p align="center">
