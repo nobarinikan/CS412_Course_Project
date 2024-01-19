@@ -13,12 +13,6 @@ The work presented is for the CS412 Machine Learning course at Sabanci Universit
 4. [Team Contributions](#teamcontributions)
 ### General Info
 ***
-
-### Screenshot
-<p align="center">
-  <img src="Plots/image.png" alt="Ornek" width="50%">
-</p>
-
 ## Methodology
 ***
 A list of methodologies used within the project:
@@ -52,3 +46,9 @@ Give instructions on how to collaborate with your project.
 > Maybe you want to write a quote in this part. 
 > Should it encompass several lines?
 > This is how you do it.
+
+
+### Screenshot
+<p align="center">
+  <img src="Plots/image.png" alt="Ornek" width="50%">
+</p>
