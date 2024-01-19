@@ -63,6 +63,9 @@ The general scores data were skewed, indicating that the histogram was asymmetri
 * Select Features (Links to Code Snippets?)
   
 * Different Models trainings (NN, randomForest etc.) (Links to Code Snippets?)
+
+  ### Random Forest Algorithm:
+  The project employs the Random Forest algorithm for regression tasks, utilizing `RandomForestRegressor` from `sklearn.ensemble` with 1,000 trees and a maximum depth of 10 for each tree. This setup is designed to enhance model performance without overfitting. Model evaluation involves Mean Squared Error (MSE) and R-Squared (R2) metrics, assessing prediction accuracy and the variance explained by the model, respectively. These metrics provide a clear indication of the model's predictive ability on both training and test data, ensuring a balanced and thorough evaluation of the Random Forest algorithm in the project.
 ## Results
 ***
 Discussion and conclusion
