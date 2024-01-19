@@ -107,10 +107,11 @@ Handling Missing Values: Built-in mechanisms to address missing data.
 	  	* n_estimators: Specifies the number of trees in the ensemble. More trees can improve accuracy but increase training time.
     	  
     * Process:
-      - Define a range of values for each hyperparameter.
-      - Implement cross-validation (e.g., K-fold) to train and evaluate models with different combinations.
-      - Select hyperparameters that yield the best validation performance.
-	  * Selected Hyperparameters:
+	Define a range of values for each hyperparameter.
+	Implement cross-validation (e.g., K-fold) to train and evaluate models with different combinations.
+	Select hyperparameters that yield the best validation performance.
+
+	* Selected Hyperparameters:
 	Hyperparameters were tuned using cross-validation to optimize model performance.
 		* max_depth=4: Individual trees can have a maximum depth of 4.
     **NİKAAANN BURAYA MAX_DEPTH XGBOOST GRAPH !!!!**
@@ -123,7 +124,7 @@ Handling Missing Values: Built-in mechanisms to address missing data.
     	* Mean Squared Error (MSE):
      		 * Train: 45.0738
      		 * Test: 99.4161
-  	* R-squared:
+	* R-squared:
      		 * Train: 0.7242
      		 * Test: 0.1145
         
