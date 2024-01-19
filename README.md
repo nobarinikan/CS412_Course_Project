@@ -246,6 +246,15 @@ Handling Missing Values: Built-in mechanisms to address missing data.
 The Neural Network model, in particular, faced challenges, as indicated by the negative R2 score on the test data, pointing towards its struggle to adapt to unseen data. Similarly, while the Random Forest model achieved a reasonable fit on the training data, its performance dropped on the test set, signaling a need for further refinement to enhance its predictive accuracy on new data.
 
 Each model's results underscore the complex task of not just fitting to the training data but also ensuring that the model captures the underlying patterns well enough to perform accurately on data it has not encountered before. It's clear that while XGBoost led the way in terms of adaptability to new data, there is still room for improvement across all models to bridge the gap between training and test performance.
+
+Feature selection also appeared to be quite a challenging part of the project, where starting the project, there were 22 features extracted from the data. After carefully examining these features’ correlations with students’ grades, and examining their corresponding individual scatter plots, only around %35 of them was utilized. It is also important to note that different models such as Neural Networks, and XGBoost model made use of a different subset of features. 
+
+For example, the 2 new features named primitive_grade and whichQuestStartAskGPT was added because they showed high correlation with the grades. They were used solely for the XGBoost model, which outperformed the other models. Primitive grades represent a grade where the student gets full grades for every question for which they follow up with a prompt that is about the proceeding question. Here, we made the assumption that the student was satisfied with the response they received from GPT. The second feature whichQuestStartAskGPT gives as a measure of from which question the indiviuıdal student started asking questions to GPT.
+
+<p align="center">
+  <img src="Plots/3_DTCorrelation.png" alt="Ornek" width="50%">
+</p>
+
   ### Conclusion:
   This project represented a significant endeavor to predict student homework scores through the application of various machine learning techniques. Initial efforts were concentrated on meticulous data preparation and the construction of a comprehensive set of features, providing a solid groundwork for subsequent model training.
 
