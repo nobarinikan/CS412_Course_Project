@@ -141,6 +141,14 @@ Handling Missing Values: Built-in mechanisms to address missing data.
     ** MSE: Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
     ** R-squared: Values closer to 1 indicate better model fit. The test R-squared is relatively low, suggesting room for improvement in generalization.
 
+ # Discussion and conclusion:
+  ### Discussion:
+  The project explored several machine learning models to predict homework scores, with a clear focus on data preparation and feature engineering. The performance of these models varied, with each displaying unique strengths and weaknesses. Notably, the XGBoost model exhibited a comparatively better performance on the test data, suggesting a more effective generalization compared to the Neural Network and Random Forest models. However, it's important to acknowledge that even the XGBoost model, despite its relative success, showed signs of overfitting, as evidenced by the difference in performance between the training and test sets.
+
+The Neural Network model, in particular, faced challenges, as indicated by the negative R2 score on the test data, pointing towards its struggle to adapt to unseen data. Similarly, while the Random Forest model achieved a reasonable fit on the training data, its performance dropped on the test set, signaling a need for further refinement to enhance its predictive accuracy on new data.
+
+Each model's results underscore the complex task of not just fitting to the training data but also ensuring that the model captures the underlying patterns well enough to perform accurately on data it has not encountered before. It's clear that while XGBoost led the way in terms of adaptability to new data, there is still room for improvement across all models to bridge the gap between training and test performance.
+
 ## Team Contributions
 ***
 We highly relied on collaboration. Every group member was very interested and helpful to this project. Banu and Buse contributed to data preparation. Buse, Gizem, and Nikan contributed to feature engineering. Gizem contributed to Decision Tree. Banu and Buse contributed to the Neural Network Model. Selim contributed to the Random Forest Algorithm. Gizem contributed to the XGBoost. Banu, Buse, and Nikan contributed to data exploration. Selim contributed to the discussion and conclusion.
