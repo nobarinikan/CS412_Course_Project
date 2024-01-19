@@ -115,13 +115,12 @@ Handling Missing Values: Built-in mechanisms to address missing data.
 	  * Selected Hyperparameters:
 		Hyperparameters were tuned using cross-validation to optimize model performance.
 		* max_depth=4: Individual trees can have a maximum depth of 4.
-    NİKAAANN BURAYA MAX_DEPTH XGBOOST GRAPH !!!!
+    **NİKAAANN BURAYA MAX_DEPTH XGBOOST GRAPH !!!!**
       		* learning_rate=0.05: Each tree's contribution is weighted with a step size of 0.05.
-    NİKAAANN BURAYA LEARNING_RATE XGBOOST GRAPH !!!!
+    **NİKAAANN BURAYA LEARNING_RATE XGBOOST GRAPH !!!!**
 	  	* n_estimators=50: Model includes 50 trees in the ensemble.
-    NİKAAANN BURAYA N_ESTIMATORS XGBOOST GRAPH !!!!
+    **NİKAAANN BURAYA N_ESTIMATORS XGBOOST GRAPH !!!!**
 	  	
-	
   * Evaluation Results of XGBoost Algorithm:
     * Mean Squared Error (MSE):
       * Train: 45.0738
