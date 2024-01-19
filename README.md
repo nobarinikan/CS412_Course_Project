@@ -24,12 +24,8 @@ Texts in the dictionary are preprocessed by several steps, including lowercasing
 Prompts written by students are matched with questions given in the assignment by the simple term frequency vectorizing method. The distances between vectors representing prompts and questions are calculated. Mapping between file codes and their cosine similarity scores for each question is done.
 
 Since we ran multiple training models for the next parts, tokenization and vectorization of data were needed for the ones which require a numerical format as it is a common preprocessing step for natural language processing tasks. 
-  
-```ruby
-print(snippet here)
-```
 
-* Feature Engineering (Links to Code Snippets?)
+* Feature Engineering
 
 Many features were created, and some with high correlations were selected for training our models. If we used all these features, our models might have a an overfitting problem. Here is the list of our features created:
 
@@ -58,10 +54,8 @@ Many features were created, and some with high correlations were selected for tr
 
 BURAYA GRADE DISTRIBUTION GRAPH!!
 The general scores data were skewed, indicating that the histogram was asymmetrically distributed. Many students received very high grades on a scale of 80-100 out of 100. The lowest scores, 15 and 31, were identified as outliers. The features are normalized using MinMaxScaler to scale each numerical value between 0 and 1. The scores merged with the features data frame for further analysis in the next steps. Rows with NaN values and duplicates are disregarded.
-
-* Select Features (Links to Code Snippets?)
   
-* Different Models trainings (NN, randomForest etc.) (Links to Code Snippets?)
+* Different Models trainings (NN, randomForest etc.)
 
   ### Neural Network Model:
 
