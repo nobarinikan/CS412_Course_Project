@@ -19,7 +19,7 @@ A list of methodologies used within the project:
 
 * Data Preparation
 
-The data extracted from HTML files that store the ChatGPT conversations of students. The HTML files are read, parsed with BeautifulSoup and conversations are extracted based on specific patterns. THe code is extracted from file path, acting as a key in the “code2convos” dictionary where results are stored. If there are errors, detailed information is recorded in the log file, aiding in debugging and analysis. Duplicated keys are removed to prevent overwriting. 
+The data extracted from HTML files that store the ChatGPT conversations of students. The HTML files are read, parsed with BeautifulSoup and conversations are extracted based on specific patterns. The code is extracted from file path, acting as a key in the “code2convos” dictionary where results are stored. If there are errors, detailed information is recorded in the log file, aiding in debugging and analysis. Duplicated keys are removed to prevent overwriting. 
 
 Texts in the dictionary are preprocessed by several steps, including lowercasing, removal of punctuation and special characters, stopword removal, stemming, and lemmatization. Tokenized words are then rejoined into a single string. The dictionary is updated with the preprocessed version.
 
@@ -32,7 +32,31 @@ print(snippet here)
 ```
 
 * Feature Engineering (Links to Code Snippets?)
-  
+
+Many features were created and some with high correlations were selected for training our models. Here is the list of our features:
+> Feature 1: Number of prompts that a users asked
+> Feature 2: Number of complaints that a user makes e.g "the code gives this error!"
+> Feature 3: User prompts average number of characters
+> Feature 4: Total number of prompts
+> Feature 5: Ratio of error prompts to total prompts
+> Feature 6: Average entropy per prompt
+> Feature 7: Total characters per interaction (sum of prompt and response averages)
+> Feature 8: Ratio of prompt characters to response characters
+> Feature 9: Average Q per responses
+> Feature 10: Positive responses to negative responses ratio
+> Feature 11: Response Complexity
+> Feature 12: Response diversity
+> Feature 13: Prompts to errors ratio
+> Feature 14: Frequency of "thank you"
+> Feature 15: Average entropy of responses
+> Feature 16: Q_0 - Q_8 ratio to total prompts
+> Feature 17: Response length
+> Feature 18: Sentiment Analysis on Responses
+> Feature 19: Frequency of repeating prompts
+> Feature 20: Flesch-Kincaid readability score
+> Feature 21: Question number where student starts consulting gpt
+> Feature 22: Primitive Grade (calculated based on simitarity score and max point of each question)
+
 * Select Features (Links to Code Snippets?)
   
 * Different Models trainings (NN, randomForest etc.) (Links to Code Snippets?)
