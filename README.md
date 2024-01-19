@@ -88,7 +88,7 @@ Interpretability: Clear decision rules make it easy to understand model reasonin
    **min_samples_split = 20:** Minimum of 20 samples required to split a node.
    
 <p align="center">
-  <img src="Plots/Plots/1.2 - DTR min_samples_split vs RMSE.png" alt="Ornek" width="50%">
+  <img src="Plots/1.2 - DTR min_samples_split vs RMSE.png" alt="Ornek" width="50%">
 </p>
 
 
@@ -240,7 +240,3 @@ Each model's results underscore the complex task of not just fitting to the trai
 We highly relied on collaboration. Every group member was very interested and helpful to this project. Banu and Buse contributed to data preparation. Buse, Gizem, and Nikan contributed to feature engineering. Gizem contributed to Decision Tree. Banu and Buse contributed to the Neural Network Model. Selim contributed to the Random Forest Algorithm. Gizem contributed to the XGBoost. Banu, Buse, and Nikan contributed to data exploration. Selim contributed to the discussion and conclusion.
 > *Buse Keleş, Gizem Doğa Filiz, Nikan Nobari, Nur Banu Altın, Selim Gül.*
 
-### Screenshot
-<p align="center">
-  <img src="Plots/image.png" alt="Ornek" width="50%">
-</p>
