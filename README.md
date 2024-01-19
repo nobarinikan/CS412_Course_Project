@@ -160,14 +160,17 @@ Handling Missing Values: Built-in mechanisms to address missing data.
 
  * Selected Hyperparameters:
    Hyperparameters were tuned using cross-validation to optimize model performance.
+   
    **max_depth=4:** Individual trees can have a maximum depth of 4.
    <p align="center">
     <img src="Plots/2- XGBoost max_depth.png" alt="Ornek" width="50%">
    </p>
+   
    **learning_rate=0.05:** Each tree's contribution is weighted with a step size of 0.05.
    <p align="center">
     <img src="Plots/2- XGBoost learning_rate.png" alt="Ornek" width="50%">
    </p>
+   
    **n_estimators=50:** Model includes 50 trees in the ensemble.
    <p align="center">
     <img src="Plots/2- XGBoost n_estimators.png" alt="Ornek" width="50%">
