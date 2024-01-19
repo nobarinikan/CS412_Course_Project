@@ -33,7 +33,7 @@ print(snippet here)
 
 * Feature Engineering (Links to Code Snippets?)
 
-Many features were created and some with high correlations were selected for training our models. Here is the list of our features:
+Many features were created and some with high correlations were selected for training our models. Here is the list of our features created:
 
 1. Number of prompts that a user asked
 2. Number of complaints that a user makes (e.g., "the code gives this error!")
@@ -57,6 +57,10 @@ Many features were created and some with high correlations were selected for tra
 20. Flesch-Kincaid readability score
 21. Question number where the student starts consulting GPT
 22. Primitive Grade (calculated based on similarity score and max point of each question)
+
+The general scores data was skewed, meaning histogram was asymmetrically distributed. Many students had very high grades on a scale of 80-100 out of 100. The lowest scores were 15 and 31 as outliers. The scores are merged with the features data frame to proceed from now on. Features are normalized by MinMaxScaler to scale each numerical value between 0-1.
+
+
 
 * Select Features (Links to Code Snippets?)
   
