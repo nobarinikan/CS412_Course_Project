@@ -65,8 +65,8 @@ The general scores data were skewed, indicating that the histogram was asymmetri
 
   ### Neural Network Model:
 
-Train data shape: (97, 5)
-Test data shape: (25, 5)
+* Train data shape: (97, 5)
+* Test data shape: (25, 5)
 
 Since the dataset is numerical, a feedforward neural network (multilayer perceptron) is preferred as one of the models. This way we can get a parameterized family of nonlinear functions to represent our data by giving weights to each feature present. Our model gives consistent MSE and MAE values meaning the algorithm converged and learned the data. In the NN model, features with the highest correlations to grade columns are used, which are extracted from the correlation heatmap. This map is shown in the data exploration part. 
 BURAYA NN FEATURES HEATMAP
