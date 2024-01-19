@@ -119,15 +119,15 @@ Handling Missing Values: Built-in mechanisms to address missing data.
     **NİKAAANN BURAYA LEARNING_RATE XGBOOST GRAPH !!!!**
 	  	* n_estimators=50: Model includes 50 trees in the ensemble.
     **NİKAAANN BURAYA N_ESTIMATORS XGBOOST GRAPH !!!!**
-  
-    * Evaluation Results of XGBoost Algorithm:
-	* Mean Squared Error (MSE):
-  		* Train: 45.0738
-    		* Test: 99.4161   
-	* R-squared:
-     		* Train: 0.7242
-    		* Test: 0.1145
-
+ 
+  * Evaluation Results of XGBoost Algorithm:
+      * Mean Squared Error (MSE):
+	* Train: 45.0738
+    	* Test: 99.4161
+      * R-squared:
+	* Train: 0.7242
+    	* Test: 0.1145
+    
   * Interpretation:
     * MSE: Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
     * R-squared: Values closer to 1 indicate better model fit. The test R-squared is relatively low, suggesting room for improvement in generalization.
