@@ -23,6 +23,13 @@ The work presented is for the CS412 Machine Learning course at Sabanci Universit
 ***
 A list of metthodologies used within the project:
 * Download Data (Links to Code Snippets?)
+  
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
 * Create/Extract Features (Links to Code Snippets?)
 * Select Features (Links to Code Snippets?)
 * Different Modelts traines (NN, randomForest etc.) (Links to Code Snippets?)
