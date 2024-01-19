@@ -62,6 +62,21 @@ The general scores data were skewed, indicating that the histogram was asymmetri
   
 * Different Models trainings (NN, randomForest etc.) (Links to Code Snippets?)
 
+  ### Neural Network Model:
+
+Train data shape: (97, 5)
+Test data shape: (25, 5)
+
+Since the dataset is numerical, a feedforward neural network (multilayer perceptron) is preferred as one of the models. This way we can get a parameterized family of nonlinear functions to represent our data by giving weights to each feature present. Our model gives consistent MSE and MAE values meaning the algorithm converged and learned the data. In the NN model, features with the highest correlations to grade columns are used, which are extracted from the correlation heatmap. This map is shown in the data exploration part. 
+
+The NN Model consisted of 5 neurons in the input layer, which equals the number of selected features. Later, 2 hidden layers are introduced. The first one had 256 neurons, activated by the Rectified Linear Unit (ReLu). The second one had 128 neurons by ReLu since we applied a dropout layer with a rate of 0.5. Another dropout layer is applied after the 2nd hidden layer. The dropout layer is useful for preventing overfitting and reducing the dimension of the network. For the resulting output layer, we obtained a single neuron activated by a linear function which served as a regression task. The regression function provides a fitting for a continuous output range by simply getting the sum of weighted feature numerical inputs.
+
+For the optimization of the model, the Adam optimizer is utilized for a gradient-based optimization. As a loss function, MSE is chosen, which is appropriate for regression purposes. Also, as an additional metric, MAE is chosen.
+
+The model is trained for 22 epochs. In some of the runs, we used early stopping to prevent unnecessary compilations after information gain became insignificant.
+
+The model's training progress is stored in the history variable. History variable enables to call of the same model later in the code to train different datasets.
+
   ### Random Forest Algorithm:
   The project employs the Random Forest algorithm for regression tasks, utilizing `RandomForestRegressor` from `sklearn.ensemble` with 1,000 trees and a maximum depth of 10 for each tree. This setup is designed to enhance model performance without overfitting. Model evaluation involves Mean Squared Error (MSE) and R-Squared (R2) metrics, assessing prediction accuracy and the variance explained by the model, respectively. These metrics provide a clear indication of the model's predictive ability on both training and test data, ensuring a balanced and thorough evaluation of the Random Forest algorithm in the project. The results of the evaluation metrics for Random Forest algorithm are the following:
   * MSE (Mean Squared Error):
