@@ -33,8 +33,14 @@ The data extracted from HTML files that store the ChatGPT conversations of stude
 
 Texts in the dictionary are preprocessed by several steps, including lowercasing, removal of punctuation and special characters, stopword removal, stemming, and lemmatization. Tokenized words are then rejoined into a single string. The dictionary is updated with the preprocessed version.
 
-* Create/Extract Features (Links to Code Snippets?)
+Prompts written by students are matched with questions given in the assignment by the simple term frequency vectorizing method. The distances between vectors representing prompts and questions are calculated. Mapping between file codes and their cosine similarity scores for each question is done.
+
+Since we ran multiple training models for the next parts, tokenization and vectorization of data were needed for the ones which require a numerical format as it is a common preprocessing step for natural language processing tasks. 
+
+* Feature Engineering (Links to Code Snippets?)
+  
 * Select Features (Links to Code Snippets?)
+  
 * Different Models trainings (NN, randomForest etc.) (Links to Code Snippets?)
 ## Results
 ***
