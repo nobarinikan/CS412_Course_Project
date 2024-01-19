@@ -52,7 +52,10 @@ Many features were created, and some with high correlations were selected for tr
 21. Question number where the student starts consulting GPT
 22. Primitive Grade (calculated based on similarity score and max point of each question)
 
-BURAYA GRADE DISTRIBUTION GRAPH!!
+<p align="center">
+  <img src="Plots/1_GradeDistributions.png" alt="Ornek" width="50%">
+</p>
+
 The general scores data were skewed, indicating that the histogram was asymmetrically distributed. Many students received very high grades on a scale of 80-100 out of 100. The lowest scores, 15 and 31, were identified as outliers. The features are normalized using MinMaxScaler to scale each numerical value between 0 and 1. The scores merged with the features data frame for further analysis in the next steps. Rows with NaN values and duplicates are disregarded.
   
 * Different Models trainings (NN, randomForest etc.)
@@ -77,9 +80,17 @@ Interpretability: Clear decision rules make it easy to understand model reasonin
  * Selected Hyperparameters:
    Hyperparameters were tuned using cross-validation to optimize model performance.
    **max_depth = 8:** Maximum depth of 8 for the tree.
-   **NİKAAANN BURAYA MAX_DEPTH Decision tree GRAPH !!!!**
+   
+<p align="center">
+  <img src="Plots/1.1 - DTR max_depth.png" alt="Ornek" width="50%">
+</p>
+
    **min_samples_split = 20:** Minimum of 20 samples required to split a node.
-   **NİKAAANN BURAYA decision tree min sample split GRAPH !!!!**
+   
+<p align="center">
+  <img src="Plots/Plots/1.2 - DTR min_samples_split vs RMSE.png" alt="Ornek" width="50%">
+</p>
+
 
  ### Neural Network Model:
 
@@ -87,11 +98,16 @@ Interpretability: Clear decision rules make it easy to understand model reasonin
 * Test data shape: (25, 5)
 
 Since the dataset is numerical, a feedforward neural network (multilayer perceptron) is preferred as one of the models. This way we can get a parameterized family of nonlinear functions to represent our data by giving weights to each feature present. Our model gives consistent MSE and MAE values meaning the algorithm converged and learned the data. In the NN model, features with the highest correlations to grade columns are used, which are extracted from the correlation heatmap. This map is shown in the data exploration part. 
-BURAYA NN FEATURES HEATMAP
+
+<p align="center">
+  <img src="Plots/3_NNCorrelation.png" alt="Ornek" width="50%">
+</p>
 
 The NN Model consisted of 5 neurons in the input layer, which equals the number of selected features. Later, 2 hidden layers are introduced. The first one had 256 neurons, activated by the Rectified Linear Unit (ReLu). The second one had 128 neurons by ReLu since we applied a dropout layer with a rate of 0.5. Another dropout layer is applied after the 2nd hidden layer. The dropout layer is useful for preventing overfitting and reducing the dimension of the network. For the resulting output layer, we obtained a single neuron activated by a linear function which served as a regression task. The regression function provides a fitting for a continuous output range by simply getting the sum of weighted feature numerical inputs.
 
-BURAYA RELU FOTOSU
+<p align="center">
+  <img src="Plots/9 - ReLu Activation.png" alt="Ornek" width="50%">
+</p>
 
 For the optimization of the model, the Adam optimizer is utilized for a gradient-based optimization. As a loss function, MSE is chosen, which is appropriate for regression purposes. Also, as an additional metric, MAE is chosen.
 
@@ -144,12 +160,18 @@ Handling Missing Values: Built-in mechanisms to address missing data.
  * Selected Hyperparameters:
    Hyperparameters were tuned using cross-validation to optimize model performance.
    **max_depth=4:** Individual trees can have a maximum depth of 4.
-   **NİKAAANN BURAYA MAX_DEPTH XGBOOST GRAPH !!!!**
+   <p align="center">
+    <img src="Plots/2- XGBoost max_depth.png" alt="Ornek" width="50%">
+   </p>
    **learning_rate=0.05:** Each tree's contribution is weighted with a step size of 0.05.
-   **NİKAAANN BURAYA LEARNING_RATE XGBOOST GRAPH !!!!**
+   <p align="center">
+    <img src="Plots/2- XGBoost learning_rate.png" alt="Ornek" width="50%">
+   </p>
    **n_estimators=50:** Model includes 50 trees in the ensemble.
-   **NİKAAANN BURAYA N_ESTIMATORS XGBOOST GRAPH !!!!**
- 
+   <p align="center">
+    <img src="Plots/2- XGBoost n_estimators.png" alt="Ornek" width="50%">
+   </p>
+   
 ## Results
   * Evaluation Results of Decision Tree Regressor:
    - Mean Squared Error (MSE):
