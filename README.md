@@ -177,7 +177,7 @@ Handling Missing Values: Built-in mechanisms to address missing data.
    </p>
    
 ## Results
- **Evaluation Results of Decision Tree Regressor:**
+*Evaluation Results of Decision Tree Regressor:
    - Mean Squared Error (MSE):
      - **Train:** 107.2142
      - **Test:** 97.6568
@@ -206,7 +206,7 @@ Handling Missing Values: Built-in mechanisms to address missing data.
     - **MSE:** Overall, the model exhibits moderate MSE values, suggesting room for improvement in fit. The test MSE is slightly lower than the train MSE, which could be due to noise in the training set or potential underfitting.
     - **R-squared:** The R-squared values, especially on the test set, are relatively low, indicating that the model explains only a small portion of the variance in the target variable.
       
- **Evaluation Results of NN-Model:**
+ *Evaluation Results of NN-Model:
     - **Mean Squared Error (MSE):** MSE for the test set is 255.03, which is a relatively high value implying that the model's predictions deviate more from the actual values. The model has a poor performance on unseen data.
     - **R2 (R-Squared):**
   R2 for the test set is -1.27, which is a negative number, implies that the model performs 
@@ -217,7 +217,7 @@ Handling Missing Values: Built-in mechanisms to address missing data.
   be applied. Yet, the major problem with our models is that the features are not that correlated 
   or explanatory with the "grade".
 
-**Evaluation Results of Random Forest Algorithm:**
+ *Evaluation Results of Random Forest Algorithm:
     - Model evaluation involves Mean Squared Error (MSE) and R-Squared (R2) metrics, assessing prediction accuracy and the variance explained by the model, respectively. These metrics provide a clear indication of the model's predictive ability on both training and test data, ensuring a balanced and thorough evaluation of the Random Forest algorithm in the project. The results of the evaluation metrics for Random Forest algorithm are the following:
     - **MSE (Mean Squared Error):**
       - **MSE for the Training Set:** The MSE of 33.27 on the training set indicates a moderate disparity between the actual and predicted values. This suggests the model generally fits the training data but may not capture all underlying patterns.\
@@ -227,7 +227,7 @@ Handling Missing Values: Built-in mechanisms to address missing data.
       - **R2 for the Training Set:** An R2 of 0.796 indicates that approximately 79.6% of the variance in the target variable is predictable from the features in the model. This reflects a strong fit to the training data but leaves room for potential improvement.\
       - **R2 for the Test Set:** An R2 of 0.015 on the test set is close to zero, suggesting that the model does not effectively predict the target variable on unseen data. The model's capability to generalize is in question, with predictions barely better than a simple mean.
 
-**Evaluation Results of XGBoost Algorithm:**
+ *Evaluation Results of XGBoost Algorithm:
     - **Mean Squared Error (MSE):**
       - **Train:** 45.0738
       - **Test:** 99.4161
