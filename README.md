@@ -178,21 +178,21 @@ Handling Missing Values: Built-in mechanisms to address missing data.
      - **Train:** 107.2142
      - **Test:** 97.6568
      - **MSE for each node:**
-Node 0 has MSE 163.42034222552866
-Node 1 has MSE 126.39409722222263
-Node 2 has MSE 667.3333333333339
-Node 3 has MSE 63.20517901968742
-Node 4 has MSE 149.0914127423821
-Node 5 has MSE 28.042387543253426
-Node 6 has MSE 24.88083333333452
-Node 7 has MSE 18.626666666667006
-Node 8 has MSE 24.515555555553874
-Node 9 has MSE 4.195555555555984
-Node 10 has MSE 28.48999999999978
-Node 11 has MSE 16.535714285713766
-Node 12 has MSE 34.75
-Node 13 has MSE 42.859375
-Node 14 has MSE 0.0
+        - Node 0 has MSE 163.42034222552866
+        - Node 1 has MSE 126.39409722222263
+        - Node 2 has MSE 667.3333333333339
+        - Node 3 has MSE 63.20517901968742
+        - Node 4 has MSE 149.0914127423821
+        - Node 5 has MSE 28.042387543253426
+        - Node 6 has MSE 24.88083333333452
+        - Node 7 has MSE 18.626666666667006
+        - Node 8 has MSE 24.515555555553874
+        - Node 9 has MSE 4.195555555555984
+        - Node 10 has MSE 28.48999999999978
+        - Node 11 has MSE 16.535714285713766
+        - Node 12 has MSE 34.75
+        - Node 13 has MSE 42.859375
+        - Node 14 has MSE 0.0
  
    - R-squared:
      - **Train:** 0.3439
