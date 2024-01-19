@@ -16,6 +16,8 @@ The work presented is for the CS412 Machine Learning course at Sabanci Universit
 
 ### Screenshot
 ![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
+![Ornek](Plots/image.png)
+
 ## Methodology
 ***
 A list of metthodologies used within the project:
