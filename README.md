@@ -68,11 +68,9 @@ The general scores data were skewed, indicating that the histogram was asymmetri
 Discussion and conclusion
 
 ## Team Contributions
-> Buse Güney Keleş: 
-> Gizem Doğa Filiz:
-> Nikan Nobari: 
-> Nur Banu Altın: 
-> Selim Gül: 
+***
+example: x and y contributed to feature engineering. For training algorithms, z developed NN Model... 
+> Buse Güney Keleş, Gizem Doğa Filiz, Nikan Nobari, Nur Banu Altın, Selim Gül.
 
 ### Screenshot
 <p align="center">
