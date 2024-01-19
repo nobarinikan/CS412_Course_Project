@@ -201,6 +201,22 @@ Node 14 has MSE 0.0
   * Interpretation:
     ** MSE: Overall, the model exhibits moderate MSE values, suggesting room for improvement in fit. The test MSE is slightly lower than the train MSE, which could be due to noise in the training set or potential underfitting.
     ** R-squared: The R-squared values, especially on the test set, are relatively low, indicating that the model explains only a small portion of the variance in the target variable.
+  * Evaluation Results of NN-Model:
+  ***MSE (Mean Squared Error):
+
+  MSE for the test set is 255.03, which is a relatively high value implying that the model's 
+  predictions deviate more from the actual values. The model has a poor performance on unseen 
+  data.
+
+  ***R2 (R-Squared):
+
+  R2 for the test set is -1.27, which is a negative number, implies that the model performs 
+  poorly on the unseen data, and the predictions are even worse than the simple mean.
+
+  There is a possible overfitting problem with the model. In order to improve the model's 
+  performance on the test set, techniques such as cross-validation, or hyperparamater tuning can 
+  be applied. Yet, the major problem with our models is that the features are not that correlated 
+  or explanatory with the "grade".
 
   * Evaluation Results of Random Forest Algorithm:
   ***Model evaluation involves Mean Squared Error (MSE) and R-Squared (R2) metrics, assessing prediction accuracy and the variance explained by the model, respectively. These metrics provide a clear indication of the model's predictive ability on both training and test data, ensuring a balanced and thorough evaluation of the Random Forest algorithm in the project. The results of the evaluation metrics for Random Forest algorithm are the following:
@@ -227,7 +243,7 @@ Node 14 has MSE 0.0
     ** MSE: Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
     ** R-squared: Values closer to 1 indicate better model fit. The test R-squared is relatively low, suggesting room for improvement in generalization.
 
- # Discussion and conclusion:
+ # Discussion and Conclusion:
   ### Discussion:
   The project explored several machine learning models to predict homework scores, with a clear focus on data preparation and feature engineering. The performance of these models varied, with each displaying unique strengths and weaknesses. Notably, the XGBoost model exhibited a comparatively better performance on the test data, suggesting a more effective generalization compared to the Neural Network and Random Forest models. However, it's important to acknowledge that even the XGBoost model, despite its relative success, showed signs of overfitting, as evidenced by the difference in performance between the training and test sets.
 
