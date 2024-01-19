@@ -15,7 +15,9 @@ The work presented is for the CS412 Machine Learning course at Sabanci Universit
 ***
 
 ### Screenshot
-<img src="Plots/image.png" alt="Ornek" width="50%">
+<p align="center">
+  <img src="Plots/image.png" alt="Ornek" width="50%">
+</p>
 
 ## Methodology
 ***
