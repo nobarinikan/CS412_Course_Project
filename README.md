@@ -68,12 +68,11 @@ The general scores data were skewed, indicating that the histogram was asymmetri
 Discussion and conclusion
 
 ## Team Contributions
-***
-Give instructions on how to collaborate with your project.
-> Maybe you want to write a quote in this part. 
-> Should it encompass several lines?
-> This is how you do it.
-
+> Buse Güney Keleş: 
+> Gizem Doğa Filiz:
+> Nikan Nobari: 
+> Nur Banu Altın: 
+> Selim Gül: 
 
 ### Screenshot
 <p align="center">
