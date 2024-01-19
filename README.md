@@ -236,8 +236,8 @@ Handling Missing Values: Built-in mechanisms to address missing data.
       - **Test:** 0.1145
     
   * Interpretation:
-    -**MSE:** Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
-    -**R-squared:** Values closer to 1 indicate better model fit. The test R-squared is relatively low, suggesting room for improvement in generalization.
+    - **MSE:** Lower values indicate better model fit. The model performs better on the training set than the test set, suggesting potential overfitting.
+    - **R-squared:** Values closer to 1 indicate better model fit. The test R-squared is relatively low, suggesting room for improvement in generalization.
 
  # Discussion and Conclusion:
   ### Discussion:
